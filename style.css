@@ -13,27 +13,19 @@ overflow-x: hidden;
 
 body {
 width: 100%;
-min-width: 390px; /* 🔒 фиксированная ширина */
+min-width: 390px; 
 background: linear-gradient(180deg, #2d3133, #1f2325);
 color: #ffe9f6;
 font-family: 'Oswald', sans-serif;
 overflow-x: hidden;
 }
 
-
-/* =============================
-FIXED CONTAINER
-============================= */
 .wrapper {
-width: 390px; /* 🔒 ключевая фиксация */
-margin: 0 auto; /* центрируем на любом экране */
+width: 390px; 
+margin: 0 auto; 
 position: relative;
 }
 
-
-/* =============================
-BACKGROUND ELLIPSES (БЕЗ ИЗМЕНЕНИЙ)
-============================= */
 .bg-ellipse {
 position: absolute;
 background: #cf98b0;
@@ -48,12 +40,11 @@ z-index: -1;
   position: absolute;
   background: #cf98b0;
   filter: blur(150px);
-  opacity: 1; /* НЕ прозрачные */
+  opacity: 1; 
   pointer-events: none;
   z-index: -1;
 }
 
-/* HEADER */
 .header {
   padding: 16px 0;
 }
@@ -78,14 +69,12 @@ z-index: -1;
   opacity: 1;
 }
 
-/* HERO */
 .hero {
   position: relative;
   padding: 0 20px 48px;
   text-align: left;
 }
 
-/* Заголовок */
 .hero-title {
   font-size: 80px;
   font-weight: 400;
@@ -103,7 +92,6 @@ z-index: -1;
   white-space: nowrap;
 }
 
-/* Фон */
 .hero-ellipse {
   position: absolute;
   width: 446px;
@@ -131,7 +119,6 @@ z-index: -1;
   display: block;
 }
 
-/* TAGS */
 .tag {
   position: absolute;
   background: rgba(66, 73, 75, 0.6);
@@ -159,7 +146,6 @@ z-index: -1;
   left: -10px;
 }
 
-/* BUTTONS */
 .hero-buttons {
   margin-top: 0px;
   display: flex;
@@ -188,7 +174,6 @@ z-index: -1;
   color: #d66998;
 }
 
-/* ABOUT */
 .about {
   padding: 48px 16px 0;
 }
@@ -266,7 +251,6 @@ z-index: -1;
   font-weight: 400;
 }
 
-/* WHY */
 .why-e1 {
   top: 2300px;
   left: -120px;
@@ -287,7 +271,7 @@ z-index: -1;
 .why-title {
   display: flex;
   justify-content: center;
-  align-items: baseline; /* 🔑 ключ */
+  align-items: baseline; 
   gap: 12px;
 }
 
@@ -301,7 +285,7 @@ z-index: -1;
   font-size: 80px;
   color: #d66998;
 
-  position: static; /* ❌ больше не нужно absolute/relative */
+  position: static; 
 }
 
 .why-list {
@@ -309,7 +293,7 @@ z-index: -1;
   list-style: none;
   padding: 0;
   font-size: 20px;
-  font-weight: 200; /* regular */
+  font-weight: 200; 
 }
 
 .why-list li {
@@ -328,7 +312,6 @@ z-index: -1;
   font-family: 'Great Vibes', cursive;
 }
 
-/* PRICE LISTS */
 .price-e1 {
   top: 3000px;
   left: 300px;
@@ -458,9 +441,6 @@ z-index: -1;
   font-weight: 200;
 }
 
-/* ===============================
-   WORKS
-================================ */
 .works-e1 {
   top: 5000px;
   left: -50px;
@@ -481,11 +461,10 @@ z-index: -1;
 }
 
 .works {
-  margin-top: 41px; /* от прайс-листа */
+  margin-top: 41px; 
   padding: 0 16px;
 }
 
-/* TITLE */
 .works-title {
   font-family: 'Oswald', sans-serif;
   font-size: 80px;
@@ -495,7 +474,6 @@ z-index: -1;
   margin-bottom: 0;
 }
 
-/* GALLERY */
 .works-gallery {
   display: flex;
   justify-content: center;
@@ -503,7 +481,6 @@ z-index: -1;
   margin-top: 0;
 }
 
-/* COLUMNS */
 .works-column {
   display: flex;
   flex-direction: column;
@@ -511,14 +488,13 @@ z-index: -1;
 }
 
 .works-column.left {
-  margin-top: 25px; /* от заголовка */
+  margin-top: 25px; 
 }
 
 .works-column.right {
-  margin-top: 45px; /* от заголовка */
+  margin-top: 45px; 
 }
 
-/* CARD */
 .work-card {
   width: 181px;
   height: 245px;
@@ -529,7 +505,6 @@ z-index: -1;
   padding-top: 10px;
 }
 
-/* IMAGE */
 .work-card img {
   width: 169px;
   height: 169px;
@@ -537,16 +512,14 @@ z-index: -1;
   display: block;
 }
 
-/* ACTIONS */
 .works-actions {
-  margin-top: 45px; /* от первой колонны */
+  margin-top: 45px; /
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 14px;
 }
 
-/* OUTLINE BUTTON */
 .btn-outline {
   width: 370px;
   height: 80px;
@@ -559,7 +532,6 @@ z-index: -1;
   color: #d66998;
 }
 
-/* PRIMARY BUTTON */
 .btn-primary {
   width: 370px;
   height: 80px;
@@ -576,7 +548,7 @@ z-index: -1;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none; /* ⬅️ убираем подчёркивание */
+  text-decoration: none; 
 }
 
 .location-e1 {
@@ -591,7 +563,11 @@ z-index: -1;
   padding: 0 16px 80px;
 }
 
-/* === ЗАГОЛОВОК === */
+.location-map {
+  width: 100%;
+  height: 300px; 
+}
+
 .location-title-wrap {
   position: relative;
   text-align: center;
@@ -611,31 +587,28 @@ z-index: -1;
 
 .location-script {
   position: absolute;
-  right: 10px; /* ➜ вправо */
-  bottom: -18px; /* ➜ ниже */
+  right: 10px;
+  bottom: -18px; 
   font-family: 'Great Vibes', cursive;
   font-size: 45px;
   color: #d66998;
   white-space: nowrap;
 }
 
-/* === КАРТОЧКА === */
 .location-card {
   background: rgba(66, 73, 75, 0.5);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
   padding: 80px 16px 20px;
-  margin-top: -90px; /* ⬅️ поднимаем карточку */
+  margin-top: -90px; 
 }
 
-/* === КАРТА === */
 .location-map {
-  height: 260px; /* ОБЯЗАТЕЛЬНО */
+  height: 260px;
   width: 100%;
   border: 3px solid #d66998;
   box-sizing: border-box;
 }
 
-/* === ТЕКСТ ПОД КАРТОЙ === */
 .location-text {
   margin-top: 4px;
   padding: 0 16px;
@@ -644,7 +617,6 @@ z-index: -1;
   color: #d66998;
 }
 
-/* CONTACTS */
 .contacts-e1 {
   top: 7320px;
   left: -100px;
@@ -653,12 +625,11 @@ z-index: -1;
 }
 
 .contacts {
-  margin-top: 41px; /* от блока Адрес */
+  margin-top: 41px;
   padding: 0 16px 80px;
   text-align: center;
 }
 
-/* TITLE */
 .contacts-title {
   position: relative;
   margin-bottom: 24px;
@@ -678,10 +649,9 @@ z-index: -1;
   font-size: 45px;
   color: #d66998;
   margin-top: -10px;
-  margin-left: 230px; /* ⬅️ смещение вправо */
+  margin-left: 230px; 
 }
 
-/* TEXT */
 .contacts-text {
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
@@ -695,11 +665,10 @@ z-index: -1;
   color: #d66998;
 }
 
-/* BUTTONS */
 .contacts-buttons {
   display: flex;
   flex-direction: column;
-  gap: 14px; /* расстояние между кнопками */
+  gap: 14px; 
   align-items: center;
 }
 
@@ -716,7 +685,6 @@ z-index: -1;
   transition: 0.3s ease;
 }
 
-/* OUTLINE BUTTON */
 .contact-btn.outline {
   border: 2px solid #d66998;
   color: #d66998;
@@ -727,7 +695,6 @@ z-index: -1;
   background: rgba(214, 105, 152, 0.1);
 }
 
-/* FOOTER */
 .footer {
   padding: 60px 16px 32px;
   text-align: center;
