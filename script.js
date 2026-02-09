@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function initMap() {
-  const coords = [56.521815, 84.973367]; // Ленская 31
+  const coords = [56.5213094, 84.9731547]; // Ленская 31
 
   const map = new ymaps.Map('yandex-map', {
     center: coords,
