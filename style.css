@@ -611,7 +611,7 @@ z-index: -1;
 
 .location-script {
   position: absolute;
-  right: -90px; /* ➜ вправо */
+  right: 10px; /* ➜ вправо */
   bottom: -18px; /* ➜ ниже */
   font-family: 'Great Vibes', cursive;
   font-size: 45px;
@@ -678,7 +678,7 @@ z-index: -1;
   font-size: 45px;
   color: #d66998;
   margin-top: -10px;
-  margin-left: 70px; /* ⬅️ смещение вправо */
+  margin-left: 230px; /* ⬅️ смещение вправо */
 }
 
 /* TEXT */
