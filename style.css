@@ -1,20 +1,48 @@
-@font-face {
-  font-family: 'Martina';
-  src: url('./fonts/MartinaScriptC-Regular.woff2') format('woff2');
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+html {
+width: 100%;
+overflow-x: hidden;
 }
+
 
 body {
-  background: linear-gradient(180deg, #2d3133, #1f2325);
-  color: #ffe9f6;
-  font-family: 'Oswald', sans-serif;
+width: 100%;
+min-width: 390px; /* 🔒 фиксированная ширина */
+background: linear-gradient(180deg, #2d3133, #1f2325);
+color: #ffe9f6;
+font-family: 'Oswald', sans-serif;
+overflow-x: hidden;
 }
+
+
+/* =============================
+FIXED CONTAINER
+============================= */
+.wrapper {
+width: 390px; /* 🔒 ключевая фиксация */
+margin: 0 auto; /* центрируем на любом экране */
+position: relative;
+}
+
+
+/* =============================
+BACKGROUND ELLIPSES (БЕЗ ИЗМЕНЕНИЙ)
+============================= */
+.bg-ellipse {
+position: absolute;
+background: #cf98b0;
+filter: blur(150px);
+opacity: 1;
+pointer-events: none;
+z-index: -1;
+}
+
 
 .bg-ellipse {
   position: absolute;
@@ -123,7 +151,7 @@ body {
 
 .tag-lashes {
   top: 290px;
-  right: -10px;
+  right: 30px;
 }
 
 .tag-led {
@@ -173,8 +201,8 @@ body {
 }
 
 .about-e2 {
-  bottom: -1300px;
-  right: -100px;
+  top: 1800px;
+  left: 200px;
   width: 200px;
   height: 200px;
 }
